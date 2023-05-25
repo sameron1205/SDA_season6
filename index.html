@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>슈퍼캣 도트 아카데미</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' />
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -45,7 +47,7 @@
 
     <!-- 슬라이드 1 -->
     <div id="slide1">
-      <!-- <div class="swiper swiper1">
+      <div class="swiper sw1">
         <div class="swiper-wrapper" style="transition-timing-function: linear;">
           <div class="swiper-slide"><img src="css/image/slide1_1.png"></div>
           <div class="swiper-slide"><img src="css/image/slide1_2.png"></div>
@@ -53,38 +55,21 @@
           <div class="swiper-slide"><img src="css/image/slide1_4.png"></div>
           <div class="swiper-slide"><img src="css/image/slide1_5.png"></div>
           <div class="swiper-slide"><img src="css/image/slide1_6.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_1.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_2.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_3.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_4.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_5.png"></div>
-          <div class="swiper-slide"><img src="css/image/slide1_6.png"></div>
-        </div> -->
-        <div class="owl-carousel owl-theme">
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_1.png"></div>
-          </div>
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_2.png"></div>
-          </div>
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_3.png"></div>
-          </div>
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_4.png"></div>
-          </div>
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_5.png"></div>
-          </div>
-          <div class="owl-container">
-            <div class="item"><img src="css/image/slide1_6.png"></div>
-          </div>
         </div>
+      </div>
     </div>
 
     <!-- 슬라이드 2 -->
     <div id="slide2">
-
+      <div class="swiper sw2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="css/image/slide2_1.jpg"></div>
+          <div class="swiper-slide"><img src="css/image/slide2_2.jpg"></div>
+          <div class="swiper-slide"><img src="css/image/slide2_3.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
 
     <!-- 섹션 2 -->
@@ -116,28 +101,47 @@
           SDA<br>
           수강생 작품을 만나보세요
         </p>
+        <div class="swiper sw3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="css/image/slide3_1.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_2.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_3.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_4.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_5.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_6.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_7.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_8.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_9.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_10.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_11.gif"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_12.png"></div>
+            <div class="swiper-slide"><img src="css/image/slide3_13.gif"></div>
+          </div>
+        </div>
+        <div class="sw3-pagination"></div>
+      </div>
+    </div>
+
+    <!-- 캘린더 -->
+    <div id="calender">
+      <div class="sec-inner">
+        <p class="sec-title third">
+          SDA<br>
+          함께 하실래요?
+        </p>
+        <div id="cal"></div>
       </div>
     </div>
 
     <!-- 섹션 3 -->
     <div id="section3">
       <div class="sec-inner">
-        <p class="sec-title third">
-          SDA<br>
-          함께 하실래요?
-        </p>
-      </div>
-    </div>
-
-    <!-- 섹션 4 -->
-    <div id="section4">
-      <div class="sec-inner">
-        <h1 id="sec4-head">채용연계 프로그램으로 <span style="color: black;">슈퍼피플</span>이 되어보세요</h1>
-        <p id="sec4-text">
+        <h1 id="sec3-head">채용연계 프로그램으로 <span style="color: black;">슈퍼피플</span>이 되어보세요</h1>
+        <p id="sec3-text">
           우수한 성적으로 도트 아카데미를 수료한 수강생에게는<br>
           슈퍼캣 도트 아티스트 정규 채용 기회가 제공됩니다.
         </p>
-        <div id="sec4-bt">SDA 6기 지원하기</div>
+        <div id="sec3-bt">SDA 6기 지원하기</div>
       </div>
     </div>
 
@@ -156,9 +160,10 @@
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script/owl.carousel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
     <script src="script/script.js"></script>
   </body>
 </html>
