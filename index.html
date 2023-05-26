@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>슈퍼캣 도트 아카데미</title>
-
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="UTF-8">
+
+    <title>슈퍼캣 도트 아카데미</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' />
@@ -122,14 +123,14 @@
       </div>
     </div>
 
-    <!-- 캘린더 -->
-    <div id="calender">
+    <!-- 스케줄러 -->
+    <div id="scheduler">
       <div class="sec-inner">
         <p class="sec-title third">
           SDA<br>
           함께 하실래요?
         </p>
-        <div id="cal"></div>
+        <div id="calendar"></div>
       </div>
     </div>
 
@@ -160,10 +161,20 @@
       </div>
     </div>
 
+    <!-- 팝업 -->
+    <div id="popup">
+      <img id="popup-bg" src="css/image/popup_1.png">
+      <img id="popup-bt" src="css/image/popup_bt1.png">
+      <div id="popup-x" onclick="exit()">
+        <div id="mark"></div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
