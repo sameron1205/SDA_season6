@@ -30,18 +30,21 @@ const sw2 = new Swiper(".sw2", {
 		nextEl : '.swiper-button-next',
 		prevEl : '.swiper-button-prev',
 	},
+  pagination : {
+		el : '.sw2-pagination',
+		clickable : true,
+	},
 });
 
 // 슬라이드 3
 const sw3 = new Swiper(".sw3", {
-  // slidesPerGroup : 4,
   slidesPerView: 1,
-  // spaceBetween: 20,
+  spaceBetween: 5,
   loop: true,
-  // loopFillGroupWithBlank : true,
   speed: 750,
   breakpoints: {
     768: {
+      // loopFillGroupWithBlank : true,
       slidesPerGroup : 4,
       slidesPerView: 4,
       spaceBetween: 20,
