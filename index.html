@@ -22,6 +22,7 @@
         <div id="logo-wrap">
           <div id="logo"></div>
         </div>
+        <div id="icon-wrap"><div id="side-icon" onclick="sideOpen()">☰</div></div>
         <ul id="nav">
           <a href="#"><li>SDA</li></a>
           <a href="#"><li>모집안내</li></a>
@@ -84,19 +85,6 @@
           SDA<br>
           다양한 혜택이 준비되어 있어요
         </p>
-        <!-- <div id="benefit-wrap">
-          <div class="benefit-column">
-            <img class="benefit" src="css/image/bene1.gif">
-            <img class="benefit" src="css/image/bene2.gif">
-            <img class="benefit last" src="css/image/bene3.gif">
-          </div>
-          <div class="benefit-column">
-            <img class="benefit" src="css/image/bene4.gif">
-            <img class="benefit" src="css/image/bene5.gif">
-            <img class="benefit last" src="css/image/bene6.gif">
-          </div>
-        </div> -->
-
         <div id="benefit-wrap">
           <img class="benefit" src="css/image/bene1.gif">
           <img class="benefit" src="css/image/bene2.gif">
@@ -180,6 +168,19 @@
       <img id="popup-bt" src="css/image/popup_bt1.png">
       <div id="popup-x" onclick="exit()">
         <div id="mark"></div>
+      </div>
+    </div>
+
+    <!-- 사이드 내비게이션 -->
+    <div id="side-wrap">
+      <div id="side-bg"></div>
+      <div id="side-inner">
+        <div id="side-x" onclick="sideClose()">✕</div>
+        <div id="side-nav">
+          <div class="side-el">SDA</div>
+          <div class="side-el">모집안내</div>
+          <div class="side-el">지원하기</div>
+        </div>
       </div>
     </div>
 

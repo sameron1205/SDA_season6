@@ -33,7 +33,7 @@
   .swiper-button-disabled { display: none; }
 
   .sec-inner {
-    width: 100%; height: 100%;
+    width: 100%;
     padding: 0 30px;
     line-height: 1.2;
     display: flex;
@@ -49,7 +49,7 @@
 
   /* 헤더 */
   #header-bg {
-    width: 100%; height: 55px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -58,7 +58,7 @@
     z-index: 999;
   }
   #header {
-    width: 100%;
+    width: 100%; height: 45px;
     padding: 5px 26px;
     display: flex;
     justify-content: space-between;
@@ -77,23 +77,66 @@
     cursor: pointer;
   }
   #nav {
-    font-size: 12px;
-    font-weight: bold;
+    display: none;
+  }
+  #icon-wrap {
     display: flex;
     align-items: center;
   }
-  #nav li {
-    padding: 0 15px;
-    color: gray;
+  #side-icon {
+    font-size: 22px;
     cursor: pointer;
   }
-  #nav li:hover {
-    transition: .3s ease;
-    color: black;
+  #side-bg {
+    position: fixed;
+    width: 100%; height: 100%;
+    top: 0; right: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 999;
+    display: none;
   }
-  #nav li:not(:hover) {
-    transition: .3s ease;
-    color: gray;
+  #side-inner {
+    position: fixed;
+    z-index: 999;
+  }
+  #side-x {
+    position: fixed;
+    top: 13px; right: 270px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  #side-nav {
+    position: fixed;
+    width: 255px; height: 100%;
+    top: 0; right: -255px;
+    font-size: 14.2px;
+    background-color: white;
+  }
+  .side-el {
+    width: 100%;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(60,60,60,.1);
+    cursor: pointer;
+  }
+  .slide-in { animation: slide-in .5s forwards; }
+  @keyframes slide-in {
+    0% {
+      right: -255px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .slide-out { animation: slide-out .5s forwards; }
+  @keyframes slide-out {
+    0% {
+      right: 0px;
+    }
+    100% {
+      right: -255px;
+    }
   }
 
 
@@ -110,11 +153,11 @@
     margin-top: 55px;
   }
   #banner-bt {
-    width: 176px; height: .66rem;
+    width: 176px; height: 52.8px;
     background-color: rgb(0,255,149);
     margin-top: 351px;
-    border-radius: 8.5px;
-    font-size: 15px;
+    border-radius: 8.8px;
+    font-size: 15.2px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -134,7 +177,8 @@
 
   /* 섹션 1 */
   #section1 {
-    width: 100%; height: 540px;
+    width: 100%;
+    padding-bottom: 60px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -157,7 +201,7 @@
     text-align: center;
   }
   #sec1-bt {
-    width: 158px; height: 48px;
+    width: 158px; height: 50px;
     background-color: rgb(92,244,131);
     margin-top: 33.5px;
     border-radius: 4px;
@@ -198,14 +242,9 @@
     align-items: center;
     background-color: white;
   }
-  /* .sw2 {
-    width: 11.25rem;
-  } */
   .sw2 .swiper-button-next::after,
   .sw2 .swiper-button-prev::after {
-    color: gray;
-    font-size: .32rem;
-    visibility: hidden;
+    display: none;
   }
   .sw2-pagination {
     display: flex;
@@ -250,7 +289,6 @@
     display: flex;
     justify-content: center;
   }
-  /* #slide3 .sec-inner { width: 92%; } */
   .second {
     color: white;
     margin-top: 48px;
@@ -269,7 +307,8 @@
 
   /* 스케줄 */
   #schedule {
-    width: 100%; height: 650px;
+    width: 100%;
+    padding-bottom: 50px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -290,7 +329,7 @@
   }
   .fc-button-group { margin-left: 16px !important; }
   .fc-button-group button {
-    width: 52px; height: 30px;
+    width: 52px; height: 29.6px;
     padding: 0 !important;
     border: solid 1px lightgray !important;
     background-color: white !important;
@@ -312,13 +351,14 @@
 
   /* 섹션 3 */
   #section3 {
-    width: 100%; height: 600px;
+    width: 100%;
+    padding-bottom: 320px;
     background-image: url('image/section3_2.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
   #section3 .sec-inner { align-items: center; }
   #sec3-head {
@@ -402,11 +442,11 @@
     cursor: pointer;
     width: 100%; height: 28.3vw;
     right: 0; bottom: 0;
-    z-index: 999;
+    z-index: 998;
   }
   #popup img { position: absolute; }
-  #popup-x { visibility: hidden; }
-  #popup-bt { visibility: hidden; }
+  #popup-x { display: none; }
+  #popup-bt { display: none; }
   #popup-bg {
     content: url('image/popup_2.png');
     width: 100%;
