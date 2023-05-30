@@ -263,7 +263,8 @@
     margin-top: 60px;
   }
   .sw3 {
-    width: 100%;
+    width: 92vw;
+    max-width: 1080px;
     margin-top: 52px;
   }
   .sw3-pagination {
@@ -310,7 +311,7 @@
     color: white !important;
   }
   .fc-button-group button:focus { box-shadow: none !important; }
-  .fc th { text-align: left; height: 40px;}
+  .fc th { text-align: left; height: 40px; }
   .fc th a { margin: 4px 0 0 4px; }
   .fc .fc-daygrid-day-top { flex-direction: row; }
   .fc .fc-daygrid-day-top a { margin: 2px 0 0 2px; }
