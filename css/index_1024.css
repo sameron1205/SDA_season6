@@ -59,7 +59,6 @@
   }
   #header {
     width: 1060px; height: 70px;
-    /* padding: 5px 18vw; */
     padding: 5px 30px;
     display: flex;
     justify-content: space-between;
@@ -88,14 +87,10 @@
     padding: 0 15px;
     color: gray;
     cursor: pointer;
+    transition: color .3s ease;
   }
   #nav li:hover {
-    transition: .3s ease;
     color: black;
-  }
-  #nav li:not(:hover) {
-    transition: .3s ease;
-    color: gray;
   }
   #side-icon { display: none; }
   #side-wrap { display: none; }
@@ -124,14 +119,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: background-color .5s ease;
   }
   #banner-bt:hover {
-    transition: .5s ease;
     background-color: white;
-  }
-  #banner-bt:not(:hover) {
-    transition: .5s ease;
-    background-color: rgb(0,255,149);
   }
 
 
@@ -172,15 +163,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: color,background-color .5s ease;
   }
   #sec1-bt:hover {
-    transition: .5s ease;
     background-color: black;
     color: white;
-  }
-  #sec1-bt:not(:hover) {
-    transition: .5s ease;
-    background-color: rgb(92,244,131);
   }
 
 
@@ -296,7 +283,6 @@
   }
   .fc-toolbar-title {
     font-weight: normal;
-    /* font-size: 20px !important; */
   }
   .fc-button-group { margin-left: 16px !important; }
   .fc-button-group button {
@@ -354,15 +340,11 @@
     align-items: center;
     cursor: pointer;
     margin-left: 12px;
+    transition: color,background-color .5s ease;
   }
   #sec3-bt:hover {
-    transition: .5s ease;
     background-color: rgb(92,244,131);
     color: black;
-  }
-  #sec3-bt:not(:hover) {
-    transition: .5s ease;
-    background-color: rgb(50,50,50);
   }
 
 
